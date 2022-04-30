@@ -1,0 +1,49 @@
+<!-- <button class="btn btn-primary" (click)="Toggle()">{{userStatus}}</button>
+<app-login-component *ngIf="userStatus=='old'"></app-login-component>
+<app-restration-component *ngIf="userStatus=='new'"></app-restration-component> -->
+
+
+<!-- 
+<button class="btn btn-primary" (click)="Toggle()">{{userStatus}}</button>
+<app-login-component *ngIf="userStatus=='old';else elseBlock"></app-login-component>
+<ng-template #elseBlock>
+<app-restration-component></app-restration-component>
+</ng-template> -->
+
+
+<!-- <app-switch-case></app-switch-case> -->
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Wai Technologies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+
+          <button (click)="fun(1)">Home</button>
+          <button (click)="fun(2)">Login</button>
+          <button (click)="fun(3)">Register</button>
+
+
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Input string : <input type="tcdext" [(ngModel)]="num"> -->
+<div [ngSwitch]="num">
+  <app-home *ngSwitchCase="'1'"></app-home>
+  <app-login-component *ngSwitchCase="'2'"></app-login-component>
+  <app-restration-component *ngSwitchCase="'3'"></app-restration-component>
+</div>
+
+<app-practice></app-practice>

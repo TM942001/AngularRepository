@@ -1,0 +1,20 @@
+<p><button type="button" value="Show Login Form" (click)="change()" #form>{{buttonName}}</button>
+    <ng-container *ngIf="show">
+    <div class="bg-info w-25 h-50 p-5" >
+    <h2>Login Form</h2>
+    <label>Username:</label>
+    <input type="text" name="fname"><br><br>
+    <label>password:</label>
+    <input type="password" name="pass"><br><br>
+    <button type="submit" class="btn btn-success">Login</button>&nbsp;&nbsp;
+    <button type="cancel" class="btn btn-success">Cancel</button>
+    <button type="button" value="Registration Link" ></button>
+    </div>
+  
+    </ng-container>
+
+<!--     
+
+    <app-registration-component></app-registration-component> -->
+    
+    
